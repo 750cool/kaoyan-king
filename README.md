@@ -1,4 +1,4 @@
-[README.md](https://github.com/user-attachments/files/28172459/README.md)
+[README.md](https://github.com/user-attachments/files/28172854/README.md)
 # Kaoyan Spaced Review
 
 一个本地运行的考研逐页复习系统：把教材内容按页转成填空题卡，记录“知道 / 不知道”，再根据复习结果安排后续复习。
@@ -15,6 +15,18 @@
   - 线性代数：每天 10 页。
   - 概率论与数理统计：每天 10 页。
   - 信号与系统：默认每天 10 页，可自行调整。
+
+## 界面预览
+
+交互式复习页面会按天展示题卡，支持填空、查看答案、标记“知道 / 不知道”，并在需要时展开对应教材页图。
+
+![交互复习页面预览 1](docs/images/preview-01.png)
+![交互复习页面预览 2](docs/images/preview-02.png)
+![交互复习页面预览 3](docs/images/preview-03.png)
+![交互复习页面预览 4](docs/images/preview-04.png)
+![交互复习页面预览 5](docs/images/preview-05.png)
+![交互复习页面预览 6](docs/images/preview-06.png)
+![交互复习页面预览 7](docs/images/preview-07.png)
 
 ## 版权说明
 
