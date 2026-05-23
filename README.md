@@ -1,4 +1,4 @@
-[README.md](https://github.com/user-attachments/files/28172854/README.md)
+[README.md](https://github.com/user-attachments/files/28172897/README.md)
 # Kaoyan Spaced Review
 
 一个本地运行的考研逐页复习系统：把教材内容按页转成填空题卡，记录“知道 / 不知道”，再根据复习结果安排后续复习。
@@ -20,13 +20,13 @@
 
 交互式复习页面会按天展示题卡，支持填空、查看答案、标记“知道 / 不知道”，并在需要时展开对应教材页图。
 
-![交互复习页面预览 1](docs/images/preview-01.png)
-![交互复习页面预览 2](docs/images/preview-02.png)
-![交互复习页面预览 3](docs/images/preview-03.png)
-![交互复习页面预览 4](docs/images/preview-04.png)
-![交互复习页面预览 5](docs/images/preview-05.png)
-![交互复习页面预览 6](docs/images/preview-06.png)
-![交互复习页面预览 7](docs/images/preview-07.png)
+![交互复习页面预览 1](preview-01.png)
+![交互复习页面预览 2](preview-02.png)
+![交互复习页面预览 3](preview-03.png)
+![交互复习页面预览 4](preview-04.png)
+![交互复习页面预览 5](preview-05.png)
+![交互复习页面预览 6](preview-06.png)
+![交互复习页面预览 7](preview-07.png)
 
 ## 版权说明
 
