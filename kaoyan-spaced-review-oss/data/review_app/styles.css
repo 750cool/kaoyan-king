@@ -202,3 +202,45 @@ summary { cursor: pointer; color: var(--accent); font-weight: 700; }
   .topbar { position: static; }
   .cards { grid-template-columns: 1fr; }
 }
+
+.prompt sup,
+.answer sup {
+  font-size: .72em;
+  vertical-align: .55em;
+}
+
+.prompt sub,
+.answer sub {
+  font-size: .72em;
+  vertical-align: -.25em;
+}
+
+.math-root {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 1px;
+  white-space: nowrap;
+}
+
+.math-root > span {
+  border-top: 1.5px solid currentColor;
+  padding: 0 2px;
+}
+
+.math-int {
+  display: inline-block;
+  position: relative;
+  font-size: 1.2em;
+  padding: 0 .15em;
+  line-height: 1;
+}
+
+.math-int sup {
+  position: relative;
+  left: -.08em;
+}
+
+.math-int sub {
+  position: relative;
+  left: -.18em;
+}
