@@ -1,0 +1,9 @@
+name: 考研逐页填空复习系统
+authors: [裴涔宇]
+category: Tool
+tags: [考研, 间隔复习, 填空题卡, 本地工具, 遗忘曲线]
+status: in-progress
+updated: 2026-05-23
+summary: 一个本地运行的考研逐页复习工具，可将教材内容转成填空题卡，并根据“知道/不知道”反馈安排后续复习。
+
+readme: README.md
