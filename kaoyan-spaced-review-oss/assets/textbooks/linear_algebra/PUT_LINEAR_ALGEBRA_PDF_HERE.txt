@@ -1,0 +1,7 @@
+Put Yang Wei Linear Algebra PDF files here.
+
+Suggested naming:
+- yangwei-linear-algebra-2027.pdf
+- yangwei-linear-algebra-examples-2027.pdf
+
+Do not paste large textbook content into chat. Keep the PDF in this folder and ask Codex to use $kaoyan-spaced-review.

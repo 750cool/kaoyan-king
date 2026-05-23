@@ -1,0 +1,43 @@
+{
+  "anchor_date": "2026-05-23",
+  "current": {
+    "higher_math": {
+      "title": "考研数学基础30讲 高等数学分册",
+      "pdf_dir": "assets/textbooks/higher_math",
+      "pdf_glob": "*.pdf",
+      "next_pdf_page": 37,
+      "next_print_page": 31,
+      "daily_pages": 30,
+      "notes": "2026-05-23 restarted schedule and assigned PDF p.7-p.36 / print p.1-p.30. Continue from PDF p.37 / print p.31."
+    },
+    "linear_algebra": {
+      "title": "考研数学基础30讲 线性代数分册",
+      "pdf_dir": "assets/textbooks/linear_algebra",
+      "pdf_glob": "*.pdf",
+      "next_pdf_page": 1,
+      "next_print_page": "TBD",
+      "daily_pages": 10,
+      "notes": "Start from first PDF page and visually identify first formal content page."
+    },
+    "probability": {
+      "title": "概率论与数理统计基础篇",
+      "pdf_dir": "assets/textbooks/probability",
+      "pdf_glob": "*.pdf",
+      "next_pdf_page": 1,
+      "next_print_page": "TBD",
+      "daily_pages": 10,
+      "notes": "Start from first PDF page and visually identify first formal content page."
+    },
+    "signals_systems": {
+      "title": "信号与系统",
+      "pdf_dir": "assets/textbooks/signals_systems",
+      "pdf_glob": "*.pdf",
+      "next_pdf_page": 1,
+      "next_print_page": "TBD",
+      "daily_pages": 10,
+      "notes": "Start from first PDF page and visually identify first formal content page."
+    }
+  },
+  "book_order": ["higher_math", "linear_algebra", "probability", "signals_systems"],
+  "last_updated": "2026-05-23"
+}

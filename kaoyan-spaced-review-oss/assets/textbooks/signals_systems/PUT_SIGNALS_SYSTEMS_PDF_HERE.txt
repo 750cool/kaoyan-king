@@ -1,0 +1,8 @@
+Put Signals and Systems PDF files here.
+
+Suggested naming:
+- signals-and-systems-textbook.pdf
+- signals-and-systems-notes.pdf
+- signals-and-systems-examples.pdf
+
+Do not paste large textbook content into chat. Keep the PDF in this folder and ask Codex to use $kaoyan-spaced-review.

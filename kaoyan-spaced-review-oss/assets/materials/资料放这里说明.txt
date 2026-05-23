@@ -1,0 +1,11 @@
+强化、真题、讲义放这里：
+
+1. math_foundation：数学基础资料
+2. math_intensive：数学强化资料
+3. math_past_papers：数学真题、模拟题、解析
+4. signals_foundation：信号与系统基础资料
+5. signals_intensive：信号与系统强化资料
+6. signals_past_papers：信号与系统真题、模拟题、解析
+
+放完后，在 Codex 里说：
+用 $kaoyan-spaced-review，把新资料接入我的复习计划。

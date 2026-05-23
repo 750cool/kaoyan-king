@@ -1,0 +1,7 @@
+Put Zhang Yu Higher Mathematics PDF files here.
+
+Suggested naming:
+- zhangyu-higher-math-2027.pdf
+- zhangyu-higher-math-examples-2027.pdf
+
+Do not paste large textbook content into chat. Keep the PDF in this folder and ask Codex to use $kaoyan-spaced-review.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Kaoyan Spaced Review"
+  short_description: "Create spaced review plans for Math I and Signals exams"
+  default_prompt: "Use $kaoyan-spaced-review to build today's review plan from my textbook PDFs and past recall results."

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>考研逐页填空复习</title>
+  <link rel="stylesheet" href="/data/review_app/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>高数逐页填空复习</h1>
+      <p>2026-05-23 · PDF p.7-p.36 / 印刷 p.1-p.30</p>
+    </div>
+    <div class="stats">
+      <span id="doneCount">0</span>/<span id="totalCount">0</span>
+      <small>已判定</small>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <section>
+        <h2>今日范围</h2>
+        <p>第1讲：函数极限与连续</p>
+        <p>下一次高数：PDF p.37 / 印刷 p.31</p>
+      </section>
+      <section>
+        <h2>筛选</h2>
+        <button class="filter active" data-filter="all">全部</button>
+        <button class="filter" data-filter="unknown">不知道</button>
+        <button class="filter" data-filter="known">知道</button>
+      </section>
+      <section>
+        <h2>明日计划</h2>
+        <div id="scheduleList" class="schedule"></div>
+      </section>
+    </aside>
+
+    <section class="cards" id="cards"></section>
+  </main>
+
+  <template id="cardTemplate">
+    <article class="card">
+      <div class="card-head">
+        <span class="page"></span>
+        <span class="topic"></span>
+      </div>
+      <p class="prompt"></p>
+      <label class="answer-label">
+        我的填空
+        <textarea rows="2" placeholder="先自己填，不确定也写下猜法"></textarea>
+      </label>
+      <details>
+        <summary>查看答案</summary>
+        <p class="answer"></p>
+      </details>
+      <div class="actions">
+        <button class="unknown">不知道</button>
+        <button class="know">知道</button>
+        <button class="image-toggle">看书页图</button>
+      </div>
+      <figure class="page-image hidden">
+        <img alt="教材页图">
+        <figcaption></figcaption>
+      </figure>
+    </article>
+  </template>
+
+  <script src="/data/review_app/cards-sample.js"></script>
+  <script src="/data/review_app/app.js"></script>
+</body>
+</html>
