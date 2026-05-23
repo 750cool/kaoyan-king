@@ -1,4 +1,4 @@
-[README.md](https://github.com/user-attachments/files/28172334/README.md)
+[README.md](https://github.com/user-attachments/files/28172459/README.md)
 # Kaoyan Spaced Review
 
 一个本地运行的考研逐页复习系统：把教材内容按页转成填空题卡，记录“知道 / 不知道”，再根据复习结果安排后续复习。
@@ -54,6 +54,87 @@ http://127.0.0.1:8765/data/review_app/index.html
 ```
 
 开源版本默认加载 `data/review_app/cards-sample.js` 示例卡片。实际学习时，可以在本地生成或创建 `data/review_app/cards-local.js`，该文件不会被 Git 提交。
+
+## 使用说明
+
+### 用 `cc` 或 `cx` 打开
+
+如果你本地已经配置了 Codex 命令行别名，可以在项目目录中启动：
+
+```bash
+cd path/to/kaoyan-spaced-review
+cc
+```
+
+或：
+
+```bash
+cd path/to/kaoyan-spaced-review
+cx
+```
+
+不同人的别名可能不一样：`cc` / `cx` 本质上都是进入 Codex 工作环境的方式。进入后，让 Codex 读取本项目的 `SKILL.md`，并按你的教材目录生成复习内容即可。
+
+可以直接对 Codex 说：
+
+```text
+使用 kaoyan-spaced-review skill，按 page_progress.json 的进度，生成今天的交互式填空复习卡。
+高数每天 30 页，线代和概率每天 10 页，专业课默认每天 10 页。
+输出到 data/review_app/cards-local.js，并更新 page_progress.json。
+```
+
+### 本地启动交互页面
+
+生成卡片后，启动本地服务：
+
+```bash
+node scripts/review_server.js
+```
+
+然后打开：
+
+```text
+http://127.0.0.1:8765/data/review_app/index.html
+```
+
+页面中每张卡都有：
+
+- 填空题。
+- 查看答案。
+- `知道` / `不知道`。
+- 可选教材页图。
+- 本地复习记录。
+
+### 定时推送
+
+如果你使用 Codex App 的自动任务功能，可以创建一个每天上午 9 点运行的任务。
+
+推荐任务内容：
+
+```text
+使用 kaoyan-spaced-review skill 生成当天的交互式填空复习。
+
+要求：
+1. 读取 data/plans/daily_page_rules.md 和 data/plans/page_progress.json。
+2. 按当前书本和页码继续推进。
+3. 高数每天 30 页，线代每天 10 页，概率每天 10 页，专业课默认每天 10 页。
+4. 将知识点、公式、方法总结、编号例题转成填空卡。
+5. 输出到 data/review_app/cards-local.js。
+6. 更新 data/plans/page_progress.json。
+7. 确保 scripts/review_server.js 可运行。
+8. 最后只回复本地页面链接、今日页码范围、卡片数量、下一次页码。
+```
+
+如果不用 Codex App，也可以用系统定时任务实现。
+
+Windows 任务计划程序可以每天 9 点运行：
+
+```powershell
+cd path\to\kaoyan-spaced-review
+node scripts\review_server.js
+```
+
+不过更推荐让 Codex 自动生成当天卡片，再由 `review_server.js` 提供页面服务。
 
 ## 目录结构
 
